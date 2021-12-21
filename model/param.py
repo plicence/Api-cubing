@@ -6,3 +6,7 @@ app = Flask(__name__)
 api = Api(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./database.db'
 db = SQLAlchemy(app)
+
+
+def faker():
+    return "It Works"
